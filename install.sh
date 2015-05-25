@@ -35,6 +35,13 @@ else
   echo "source ~/.linux_setup/bashrc" >> ~/.bashrc
 fi
 
+if grep -q "source ~/.linux_setup/zshrc" "../.zshrc";
+then
+  echo ".zshrc already contains source to linux_setup zshrc"
+else
+  echo "source ~/.linux_setup/zshrc" >> ~/.zshrc
+fi
+
 git config --global core.excludesfile ~/.linux_setup/.gitignore_global
 
 sudo apt-get install silversearcher-ag
