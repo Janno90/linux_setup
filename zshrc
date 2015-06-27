@@ -9,3 +9,5 @@ alias tmk="tmux kill-session -t $1"
 export EDITOR='vim'
 
 source ~/.linux_setup/tmuxinator.zsh
+
+#eastwood theme is great
