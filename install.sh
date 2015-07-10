@@ -43,6 +43,7 @@ else
 fi
 
 git config --global core.excludesfile ~/.linux_setup/.gitignore_global
+git config --global init.templatedir '~/.linux_setup/git_template'
 
 sudo apt-get install silversearcher-ag
 sudo apt-get install exuberant-ctags
